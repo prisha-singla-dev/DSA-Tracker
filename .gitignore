@@ -1,7 +1,7 @@
 # Ignore all logs except progress.logs inside scripts/logs
 scripts/logs/*.log
-!scripts/logs/progress.logs
-!scripts/logs/progress.logs/*
+!scripts/logs/progress.log
+!scripts/logs/progress.log/*
   
 # Python cache
 __pycache__/
