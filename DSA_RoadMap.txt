@@ -1,0 +1,68 @@
+DSA Roadmap (12 Weeks) with C++
+
+Weekly Structure:
+- 5 Days: Topic-specific problem-solving.
+- 1 Day: Mixed revision (including previous topics).
+- 1 Day: Contest practice on Codeforces/Leetcode/GFG.
+
+12-Week Overview:
+- Weeks 1-2: Arrays & Strings
+- Weeks 3-4: Recursion & Backtracking
+- Weeks 5-6: Linked Lists & Stacks/Queues
+- Weeks 7-8: Trees & Binary Search Trees
+- Weeks 9-10: Graphs
+- Weeks 11-12: Dynamic Programming
+
+Week-wise Plan:
+
+Weeks 1-2: Arrays & Strings
+- Focus: Basics, 2-Pointer, Sliding Window, Sorting, Searching
+- Problems: ~50 (Easy: 20, Medium: 20, Hard: 10)
+- Example Problems:
+  - Arrays: Kadane’s Algorithm, 2 Sum, Rotate Array, Next Permutation
+  - Strings: Anagram Check, Longest Palindrome, String Matching
+- Contest Practice: Leetcode Weekly/Biweekly
+
+Weeks 3-4: Recursion & Backtracking
+- Focus: Base & Recursive Cases, Subset/Permutation Generation, Backtracking Templates
+- Problems: ~40 (Easy: 10, Medium: 20, Hard: 10)
+- Example Problems:
+  - Recursion: Factorial, Fibonacci, Subset Sum
+  - Backtracking: N-Queens, Sudoku Solver, Word Search
+- Contest Practice: Codeforces Div 4/3 Contests
+
+Weeks 5-6: Linked Lists & Stacks/Queues
+- Focus: Singly & Doubly Linked Lists, Stack & Queue Operations, Monotonic Stack/Queue
+- Problems: ~40 (Easy: 15, Medium: 15, Hard: 10)
+- Example Problems:
+  - Linked Lists: Merge Two Sorted Lists, Detect Cycle, Reverse K-Group
+  - Stacks/Queues: Min Stack, Sliding Window Maximum, Stock Span Problem
+- Contest Practice: Leetcode Biweekly/GFG Contests
+
+Weeks 7-8: Trees & Binary Search Trees
+- Focus: Tree Traversals, Binary Search Tree Operations, Segment Trees, Trie Basics
+- Problems: ~45 (Easy: 15, Medium: 20, Hard: 10)
+- Example Problems:
+  - Trees: Inorder, Preorder, Postorder, Lowest Common Ancestor
+  - BST: Insertion, Deletion, Range Sum Query
+- Contest Practice: Codeforces Div 3
+
+Weeks 9-10: Graphs
+- Focus: BFS, DFS, Shortest Path Algorithms (Dijkstra, Floyd-Warshall), Topological Sorting
+- Problems: ~40 (Easy: 10, Medium: 20, Hard: 10)
+- Example Problems:
+  - Graphs: Cycle Detection, Connected Components, Minimum Spanning Tree
+- Contest Practice: Leetcode Weekly/Codeforces Div 2
+
+Weeks 11-12: Dynamic Programming (DP)
+- Focus: 1D, 2D DP, State Transition, Memoization, Tabulation, Optimization Techniques
+- Problems: ~50 (Easy: 10, Medium: 30, Hard: 10)
+- Example Problems:
+  - DP: Coin Change, Longest Increasing Subsequence, Matrix Chain Multiplication
+- Contest Practice: Codeforces Div 2/1
+
+Additional Resources:
+- YouTube Channels: Take U Forward (Striver), CodeHelp (Babbar), Errichto
+- Platforms: Leetcode, Codeforces, GFG
+
+Goal: To master DSA for coding interviews, competitive programming, and placements within 2-3 months.

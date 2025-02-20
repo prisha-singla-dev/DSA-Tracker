@@ -1,0 +1,14 @@
+# Ignore all logs except progress.logs inside scripts/logs
+scripts/logs/*.log
+!scripts/logs/progress.logs
+!scripts/logs/progress.logs/*
+  
+# Python cache
+__pycache__/
+
+# Ignore Google Cloud credentials
+service_account.json
+*.json
+
+# Ignore secrets
+.env
