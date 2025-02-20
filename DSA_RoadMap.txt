@@ -14,7 +14,6 @@ Weekly Structure:
 - Weeks 11-12: Dynamic Programming
 
 Week-wise Plan:
-
 Weeks 1-2: Arrays & Strings
 - Focus: Basics, 2-Pointer, Sliding Window, Sorting, Searching
 - Problems: ~50 (Easy: 20, Medium: 20, Hard: 10)
