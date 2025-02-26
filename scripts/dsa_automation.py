@@ -31,7 +31,8 @@ weekly_sheet = spreadsheet.worksheet('Weekly Progress')
 contest_sheet = spreadsheet.worksheet('Contest Performance')
 
 # === Ensure Logs Folder Exists ===
-LOG_FILE = "scripts/logs/progress.log"
+SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
+LOG_FILE = os.path.join(SCRIPT_DIR, "logs/progress.log")
 os.makedirs(os.path.dirname(LOG_FILE), exist_ok=True)
 
 # === Function to Save Logs Locally ===
