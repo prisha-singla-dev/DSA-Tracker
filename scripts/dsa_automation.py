@@ -120,7 +120,7 @@ if __name__ == '__main__':
             update_daily_log(topic, problems_solved, time_spent, notes)
         
         elif choice == "2":
-            platform = input("Enter Platform (LeetCode/GFG/CodeChef): ")
+            platform = input("Enter Platform (LeetCode/GFG/CodeChef/code360): ")
             difficulty = input("Enter Difficulty (Easy/Medium/Hard): ")
             count = input("Enter Number of Problems: ")
             update_problem_counter(platform, difficulty, int(count))
