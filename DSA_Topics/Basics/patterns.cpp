@@ -214,51 +214,91 @@ void print18(int n){
     }}
 
 void print19(int n){
-    int spaces = 0;
-    for(int i =0; i<n; i++){
-        //stars
-        for(int j=1 ;j<=n-i; j++){
-            cout<<"*"<< " ";       
+   int space = 0;
+    // Upper half
+    for(int i = 0; i < n; i++) {
+        // Left stars
+        for(int j = 0; j < n - i; j++) {
+            cout << "* ";
         }
-        //space
-        for(int j =0;j<spaces;j++){
-            cout<<" ";
+        // Spaces
+        for(int j = 0; j < space; j++) {
+            cout << "  ";  // Double space to align properly
         }
-        //stars
-        for(int j=1;j<=n-i;j++){
-            cout<<"*"<<" ";       
+        // Right stars
+        for(int j = 0; j < n - i; j++) {
+            cout << "* ";
         }
-        spaces+=2;
-        cout<<endl;
+        space += 2;
+        cout << endl;
     }
-    spaces = 2*n-2;
-    for(int i =1; i<=n; i++){
+
+    space -= 2; // Adjust space for symmetry
+
+    // Lower half (mirror of the upper half)
+    for(int i = n - 1; i >= 0; i--) {
+        // Left stars
+        for(int j = 0; j < n - i; j++) {
+            cout << "* ";
+        }
+        // Spaces
+        for(int j = 0; j < space; j++) {
+            cout << "  ";
+        }
+        // Right stars
+        for(int j = 0; j < n - i; j++) {
+            cout << "* ";
+        }
+        space -= 2;
+        cout << endl;
+    }}
+
+
+void print20(int n){
+    int spaces = 2*n-2;
+    for(int i =0;i<2*n-1;i++){
+        int stars = i;
+        if(i>n) stars = 2*n-i;
         //stars
-        for(int j=1 ;j<=i; j++){
-            cout<<"*"<< " ";       
+        for(int j =1;j<=stars;j++){
+            cout<<"* ";
         }
         //space
         for(int j =1;j<=spaces;j++){
             cout<<" ";
         }
         //stars
-        for(int j=1;j<=i;j++){
-            cout<<"*"<<" ";       
+        for(int j =1;j<=stars;j++){
+            cout<<"* ";
         }
-        spaces= spaces-2;
         cout<<endl;
-    }}// to be continued
+        if(i<n) spaces-=2;
+        else spaces+=2;
+
+    }}
+
+void print21(int n){
+    for(int i=0;i<n;i++){
+        for(int j =0;j<n;j++){
+            if(i==0||i==n-1||j==0||j==n-1)
+                cout<<"* ";
+            else
+                cout<<"  ";
+        }
+        cout<<endl;
+    }}
 
 
 
 
-    int main(){
+
+int main(){
     int t;
     cin>>t;
     for(int i=0;i<t;i++){
         int n;
         cin>>n;
-        print19(n);
+        print21(n);
        
     }
     //time complexity - O(n^2)
