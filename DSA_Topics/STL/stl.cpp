@@ -1,7 +1,7 @@
 #include<bits/stdc++.h>//all the libraries included in one go
 using namespace std;
 
-// 1. Pairs
+// Pairs
 void explainPair(){
     pair<int,int>p={1,3};//p-{1,3}
     cout<<p.first<<" "<<p.second<<endl;
@@ -85,12 +85,6 @@ void explainVector(){
     v1.clear();//clears all the elements of v1
     v1.empty();//returns true if the vector is empty, else false
 
-
-
-
-
-
-
 }
 
 //2.List: Similar to vectors, but gives more front functions ->double linked list
@@ -142,3 +136,146 @@ void explainStack(){
     //o(n) time complexity - o(1)
 
 }
+
+//Queue: FIFO, can insert and delete elements from both the ends - push,pop,front,back
+void explainQueue(){
+    queue<int> q;
+    q.push(1);//{1}
+    q.push(2);//{1,2}
+    q.emplace(3);//{1,2,3}
+
+    q.back()+=5;//{1,2,8}
+    cout<<q.front();//gives the front element :1
+
+    q.pop();//{2,8}
+    cout<<q.front();//gives the front element :2
+
+    //size,swap,empty same as stack
+
+}
+
+//Priority Queue : elements are stored in a sorted order(the largest element is always at the top), can insert and delete elements from only one end - push,pop,top
+//data is not stored in linear order, its a tree structure
+void explainPQ(){
+    //MAX HEAP
+    priority_queue<int>pq;
+    pq.push(5);//{5}
+    pq.push(2);//{5,2}
+    pq.push(8);//{8,5,2}
+    pq.emplace(10);//{10,8,5,2}
+
+    pq.top();//gives the top element : 10
+    pq.pop()://{8,5,2}
+
+    //size,swap,empty same as stack
+
+    //min priority queue
+    //MIN HEAP
+    priority_queue<int,vector<int>,greater<int>>pq;
+    pq.push(5);//{5}    
+    pq.push(2);//{2,5}
+    pq.push(8);//{2,5,8}
+    pq.emplace(10);//{2,5,8,10}
+
+    pq.top();//gives the top element : 2
+    pq.pop()://{5,8,10}
+
+}
+
+push() - o(logn)
+pop() - o(logn)
+top() - o(1)
+
+//Set: stores unique elements in a sorted order
+void explainSet(){
+    set<int> st;
+    st.insert(1);//{1}
+    st.emplace(2);//{1,2}
+    st.insert(2);//{1,2} - 2 is not inserted as it is already present- unique elements
+    st.emplace(4);//{1,2,4} 
+    st.emplace(3);//{1,2,3,4} - automatically sorted
+
+    //rest of the functions are same as vectors
+
+    auto it = st.find(3);//returns the iterator of the element 3    
+    auto it = st.find(6);//returns the iterator of the element 6, if not present, it will return st.end()
+
+    st.erase(3);//{1,2,4}
+
+    int count = st.count(3);//returns the count of the element 3 : 1 (if present, else 0)
+    auto it = st.find(3);//returns the iterator of the element 3
+    st.erase(it);//erases the element 3
+
+    auto it1 = st.find(2);
+    auto it2 = st.find(4);
+    st.erase(it1,it2);//erases the elements between it1 and it2 [it1,it2) : {1,4} - it2 is not included
+
+    //lower bound and upper bound
+    auto it = st.lower_bound(2);//returns the iterator of the element 2
+    auto it = st.upper_bound(2);//returns the iterator of the element 3
+
+    //o(logn) time complexity
+
+}
+
+//Multiset: stores multiple elements in a sorted order - unique
+void explainMultiset(){
+    multiset<int> st;
+    st.insert(1);//{1}
+    st.emplace(2);//{1,2}
+    st.insert(2);//{1,2,2} - 2 is inserted as it is not unique
+    st.emplace(4);//{1,2,2,4} 
+    st.emplace(3);//{1,2,2,3,4} - automatically sorted
+
+    //rest of the functions are same as vectors
+
+    st.erase(2);//{1,2,2,4} - all the elements 2 are removed
+
+    int count = st.count(2);//returns the count of the element 2 : 2 (if present, else 0)
+
+    //only a single occurance to be erased
+    st.erase(st.find(2));//erases the element 2
+    st.erase(st.find(2), st.find(2)+2);//erases the first two elements 2
+
+    //o(logn) time complexity
+
+}
+
+
+//Unordered Set: stores unique elements in a random order
+void explainUSet(){
+    unorded set<int> st;
+    // same functions as set
+    //o(1) time complexity
+    //lower_bound and upper_bound functions are not available in unordered set
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
