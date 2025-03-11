@@ -241,7 +241,6 @@ void explainMultiset(){
 
 }
 
-
 //Unordered Set: stores unique elements in a random order
 void explainUSet(){
     unorded set<int> st;
@@ -249,6 +248,56 @@ void explainUSet(){
     //o(1) time complexity
     //lower_bound and upper_bound functions are not available in unordered set
 
+}
+
+//Maps : Key-value pairs - unique keys in sorted order of key
+void explainMap(){
+    map<int,int> mp;
+    map<int, pair<int,int>> mp;
+    map<pair<int,int>,int> mp;
+
+    mp[1] = 2;// one key'1' stores '2'.
+    mp.emplace({3,1});
+    mp.insert({2,4});
+
+    mp[{2,3}] = 10;//[{2,3},{10}]
+    {
+        {1,2}
+        {2,4}
+        {3,1}
+    }
+    for(auto it: mp){
+        cout<<it.first<<" "<<it.second<<endl;        
+    }
+
+    cout<mp[1];//prints 2
+    cout<<mp[5];//prints 0 or null.
+
+    //to find the address of iterator 
+    auto it = mp.find(3);
+    cout<<*(it).second;
+
+    auto it = mp.find(5);//ap.end() if 5 is not there
+
+    auto it = mp.lower_bound(2);
+    auto it = mp.upper_bound(3);
+    
+    //rest same 
+    // O(log n)
+
+}
+
+void explainMultiMap(){
+    //same as map , only can store multiple,duplicate keys 
+
+}
+
+void unorderedMap()
+{
+    // same but not sorted
+    //unique keys 
+    //o(1) - in allmost all cases 
+    //worst case - O(n)
 }
 
 
