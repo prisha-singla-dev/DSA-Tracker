@@ -29,7 +29,6 @@ void explainSort(){
     // sort it according to asc order of second element; if the element is same, then sort acc to first element in desc order
 
     sort(a,a+n,comp)//we gotta define comp for our own
-
 }
 
 // 2) __builtin_popcount()

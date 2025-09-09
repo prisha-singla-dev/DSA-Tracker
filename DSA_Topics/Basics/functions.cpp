@@ -40,7 +40,7 @@ int main(){
     return 0;
 }
 
-//pass by value - we can't change the actual values of the variables
+// pass by value - we can't change the actual values of the variables
 void swap(int a, int b){
     int temp = a;
     a = b;
