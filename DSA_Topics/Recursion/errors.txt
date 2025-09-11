@@ -1,0 +1,5 @@
+In recursion, 
+
+1. Segmentation Fault /Stack Overflow
+- During recursion, the executing function gets stored in the memory , but could not get completed since the recursion is a non ended ended loop /or no exist condition is provided ,
+so , it continues to run until the memory of stack in which the function is running , runs out -> throwing the error.
