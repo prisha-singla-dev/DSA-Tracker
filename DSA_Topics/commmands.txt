@@ -1,2 +1,2 @@
-g++ basics.cpp -o basics
+g++ parameterized.cpp -o parameterized
 ./basics
